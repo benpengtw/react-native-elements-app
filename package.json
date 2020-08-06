@@ -1,0 +1,55 @@
+{
+  "name": "react-native-elements-app",
+  "version": "1.1.0",
+  "description": "Demo app for React Native Elements UI Library",
+  "author": "Monte Thakkar",
+  "private": true,
+  "homepage": "https://react-native-elements.github.io/react-native-elements-app/",
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web",
+    "eject": "expo eject",
+    "test": "jest --watchAll",
+    "build:web": "expo build:web --config ./app.web-build.json --polyfill",
+    "deploy": "gh-pages -d web-build",
+    "prettify": "prettier --write 'src/**/*.js'",
+    "lint": "eslint --ext js,ts .",
+    "clean-install": "rm -rf node_modules && npm cache clean --force && watchman watch-del-all && yarn"
+  },
+  "dependencies": {
+    "@expo/vector-icons": "^10.0.0",
+    "@react-native-community/masked-view": "0.1.10",
+    "@react-navigation/drawer": "^5.8.4",
+    "@react-navigation/native": "^5.6.1",
+    "@react-navigation/stack": "^5.6.2",
+    "expo": "^38.0.0",
+    "expo-asset": "~8.1.7",
+    "expo-font": "~8.2.1",
+    "lodash": "^4.17.15",
+    "prop-types": "^15.7.2",
+    "react": "16.11.0",
+    "react-dom": "16.11.0",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-38.0.2.tar.gz",
+    "react-native-elements": "^2.0.3",
+    "react-native-gesture-handler": "~1.6.0",
+    "react-native-reanimated": "~1.9.0",
+    "react-native-safe-area-context": "~3.0.7",
+    "react-native-screens": "~2.9.0",
+    "react-native-touchable-scale": "^2.1.1",
+    "react-native-web": "~0.11.7"
+  },
+  "devDependencies": {
+    "@expo/webpack-config": "^0.12.16",
+    "@react-native-community/eslint-config": "^2.0.0",
+    "babel-preset-expo": "^8.2.3",
+    "eslint": "^7.3.1",
+    "gh-pages": "^2.1.1",
+    "jest-expo": "^38.0.0"
+  },
+  "jest": {
+    "preset": "jest-expo"
+  }
+}
